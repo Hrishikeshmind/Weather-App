@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-mode">
+    <header>
+        <h1>Weather in <span id="location">Your City</span></h1>
+        <input type="text" id="search" placeholder="Search city..." autocomplete="off">
+    </header>
+    
+    <main>
+        <section class="current-weather">
+            <h2 id="temperature">28°C</h2>
+            <p id="weather-condition">Sunny</p>
+            <div class="icon sunny"></div>
+            <p>Humidity: <span id="humidity">40%</span></p>
+            <p>Wind: <span id="wind-speed">10 km/h</span></p>
+        </section>
+        
+        <section class="forecast">
+            <!-- 5-day forecast will go here -->
+            <div class="forecast-item">
+                <p>Monday</p>
+                <div class="icon cloudy"></div>
+                <p>24°C / 18°C</p>
+            </div>
+            <div class="forecast-item">
+                <p>Tuesday</p>
+                <div class="icon rainy"></div>
+                <p>20°C / 16°C</p>
+            </div>
+            <div class="forecast-item">
+                <p>Wednesday</p>
+                <div class="icon sunny"></div>
+                <p>28°C / 21°C</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <button id="theme-toggle">Switch to Dark Mode</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
